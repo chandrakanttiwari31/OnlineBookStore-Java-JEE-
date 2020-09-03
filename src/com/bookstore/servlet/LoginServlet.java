@@ -14,6 +14,8 @@ import com.bookstore.dao.CustomerDaoImpl;
 import com.bookstore.dao.LoginDaoImpl;
 import com.bookstore.pojo.Customer;
 
+//Login Servlet
+
 @WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
 
