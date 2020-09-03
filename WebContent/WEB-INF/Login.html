@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+
+<script type="text/javascript">
+	function validation() {
+		var v1 = document.getElementById("name").value;
+		var v2 = document.getElementById("password").value;
+
+
+		
+		if (v1 == "") {
+			document.getElementById("nameerr").innerHTML = "* Please Provide Customer Name";
+			return false;
+
+		}
+		
+
+		if (!v2.match("^[a-zA-Z0-9]*$"))
+			{
+			
+			document.getElementById("passworderr").innerHTML = "* Please Provide  Valid Password";
+			return false;
+
+			}
+		return true;
+
+	}
+</script>
+<link rel="stylesheet" href="Tamplate.css">
+
+</head>
+
+<body>
+	<marquee id="marquee">WELCOME TO BOOK STORE - REGISTRATION</marquee>
+	<div align="center">
+		<form onsubmit=" return validation()">
+			<table class="td">
+				<caption id="caption">Registration - Form</caption>
+
+				<tr>
+
+					<td>User Name</td>
+					<td><input type="text" id="name"></td>
+					<td><span id="nameerr"></span></td>
+
+				</tr>
+				
+				<tr>
+
+					<td>Password</td>
+					<td><input type="password" id="password"></td>
+					<td><span id="passworderr"></span></td>
+
+				</tr>
+			</table>
+			<input type="submit" value="Register">&emsp;<input
+				type="reset">
+
+		</form>
+
+	</div>
+
+
+</body>
+</html>

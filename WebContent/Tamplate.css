@@ -1,0 +1,33 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	background-image: url("image/11.jpg");
+	text-align: center;
+	background-size: 900px;
+	padding: 30px;
+}
+#marquee{
+	
+	color: orange;
+	font-size: large;
+	font-weight: bold;
+	background:black;
+}
+#caption
+{
+	
+	font-size: 200%;
+	color: red;
+	font-weight: bolder;
+	
+	
+}
+.td
+{
+	
+	height: 20px;
+	color:black;
+	font-weight: bold;
+	padding: 10px;
+	
+}
